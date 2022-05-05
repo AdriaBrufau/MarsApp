@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\MarsApp\\MarsApp\\MarsApp.csproj": {}
+    "C:\\dev\\VisualStudioProjects\\MarsApp\\MarsApp\\MarsApp.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\MarsApp\\MarsApp\\MarsApp.csproj": {
+    "C:\\dev\\VisualStudioProjects\\MarsApp\\MarsApp\\MarsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\MarsApp\\MarsApp\\MarsApp.csproj",
+        "projectUniqueName": "C:\\dev\\VisualStudioProjects\\MarsApp\\MarsApp\\MarsApp.csproj",
         "projectName": "MarsApp",
-        "projectPath": "D:\\Projects\\MarsApp\\MarsApp\\MarsApp.csproj",
+        "projectPath": "C:\\dev\\VisualStudioProjects\\MarsApp\\MarsApp\\MarsApp.csproj",
         "packagesPath": "C:\\Users\\brufi\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\MarsApp\\MarsApp\\obj\\",
+        "outputPath": "C:\\dev\\VisualStudioProjects\\MarsApp\\MarsApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
