@@ -10,6 +10,13 @@ namespace MarsApp
     {
         static void Main(string[] args)
         {
+            
         }
+
+        public class A
+        {
+            public string Name { get; set; }
+        }
+        
     }
 }
