@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "55S/5x8p/C7eQSUEpt30agGo3gciLAha1oypibGyNvefV3wyRbpN3/N5aAIghTdKIrfh9ljeo/l1xtUh7dPcxw==",
+  "dgSpecHash": "sFa7FqkmkUM1PXWnr8nzGjuMAq6yPAPPUqAvh4DKqHMyEJGYWizonZXw4Er2qzKytoorXnbW2TolaP87iBdvww==",
   "success": true,
   "projectFilePath": "D:\\Projects\\MarsApp\\MarsApp_Testing\\MarsApp_Testing.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\brufi\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
     "C:\\Users\\brufi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.4\\microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\brufi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.4\\microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512",
+    "C:\\Users\\brufi\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.4\\microsoft.entityframeworkcore.inmemory.6.0.4.nupkg.sha512",
     "C:\\Users\\brufi\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.4\\microsoft.entityframeworkcore.relational.6.0.4.nupkg.sha512",
     "C:\\Users\\brufi\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.4\\microsoft.entityframeworkcore.sqlserver.6.0.4.nupkg.sha512",
     "C:\\Users\\brufi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

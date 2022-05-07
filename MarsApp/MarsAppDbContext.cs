@@ -9,16 +9,12 @@ namespace MarsApp
         public MarsAppDbContext(DbContextOptions<MarsAppDbContext> options)
             : base(options)
         {
-        }
-
-        public DbSet<RoverEntity> Rover { get; set; }
-        public DbSet<CompassEnum> Command { get; set; }
-        public DbSet<MapSizeEntity> MapSize { get; set; }
-
-
-        protected override void OnModelCreating(ModelBuilder model)
-        {
             
         }
+
+        public DbSet<RoverEntity> Rovers { get; set; } = null!;
+        public DbSet<MapSizeEntity> Maps { get; set; } = null!;
+
+        
     }
 }

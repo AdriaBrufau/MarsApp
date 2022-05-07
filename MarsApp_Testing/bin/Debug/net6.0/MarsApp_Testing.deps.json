@@ -112,6 +112,17 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.4": {},
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.4": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.4"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "6.0.4.0",
+            "fileVersion": "6.0.422.16106"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.4": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.4",
@@ -1072,6 +1083,7 @@
       "MarsApp/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.InMemory": "6.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
@@ -1143,6 +1155,13 @@
       "sha512": "sha512-t12WodVyGGP2CuLo7R1qwcawHY5zlg+GiQzvkceZpsjcFJVyTFFBFDPg1isBtzurLzWsl+G3z5fVXeic90mPxg==",
       "path": "microsoft.entityframeworkcore.analyzers/6.0.4",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yGwrb5Z6siJxvHhLv8yfouVkNV/YlcFrxaH1x9zap4/LtnctCIozLkWtgJHovDSYHVZm0yAkFtOMgl9rVm9Xsg==",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.4",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.6.0.4.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.4": {
       "type": "package",
