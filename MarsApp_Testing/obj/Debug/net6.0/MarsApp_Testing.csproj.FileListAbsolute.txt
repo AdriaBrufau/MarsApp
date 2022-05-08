@@ -142,3 +142,4 @@ D:\Projects\MarsApp\MarsApp_Testing\obj\Debug\net6.0\MarsApp_Testing.pdb
 D:\Projects\MarsApp\MarsApp_Testing\obj\Debug\net6.0\MarsApp_Testing.genruntimeconfig.cache
 D:\Projects\MarsApp\MarsApp_Testing\obj\Debug\net6.0\ref\MarsApp_Testing.dll
 D:\Projects\MarsApp\MarsApp_Testing\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\Projects\MarsApp\MarsApp_Testing\bin\Debug\net6.0\App.config

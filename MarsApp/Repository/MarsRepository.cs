@@ -65,7 +65,7 @@ namespace MarsApp.Repository
             return null;
 
         }
-        public RoverEntity UpdateRaver(int RoverID, int MapID, string[] requestOrder)
+        public RoverEntity UpdateRaver(int MapID, int RoverID, string[] requestOrder)
         {
             var entity = marscontext.Rovers.Find(RoverID);
             var mapEntity = marscontext.Maps.Find(MapID);
