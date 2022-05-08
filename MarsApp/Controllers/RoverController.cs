@@ -15,13 +15,13 @@ namespace MarsApp.Controllers
             _methods = methods;
         }
 
-        [HttpGet("{roverID}", Name = "GetRover")]
-        public IActionResult GetRover(int id)
+        [HttpGet("{ID}", Name = "GetRover")]
+        public ActionResult<RoverEntity> GetRover(int ID)
         {
             try
             {
-                _methods.GetRover(id);
-                return Ok();
+                var entity = _methods.GetRover(ID);
+                return Ok(entity);
             }
             catch (Exception ex)
             {
@@ -29,17 +29,28 @@ namespace MarsApp.Controllers
             }
         }
         [HttpPost]
-        public ActionResult<RoverEntity> GenerateRover(RoverEntity rover)
+        public ActionResult<RoverEntity> GenerateRover([FromBody] RoverEntity rover)
         {
             try
             {
                 _methods.CreateRover(rover);
-                _methods.Save();
-                return CreatedAtRoute("GetRover", new { id = rover.RoverID }, rover);
+                return Ok(rover);
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.InnerException);
+                return BadRequest(ex);
+            }
+        }
+        [HttpGet]
+        public ActionResult<IEnumerable<RoverEntity>> GetRovers()
+        {
+            try
+            {
+                var entities = _methods.GetAllRovers();
+                return Ok(entities);
+            }catch (Exception ex)
+            {
+                return BadRequest(ex);
             }
         }
     }

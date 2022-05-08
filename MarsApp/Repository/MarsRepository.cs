@@ -12,27 +12,35 @@ namespace MarsApp.Repository
         {
             marscontext = context;
         }
-        public void CreateMap(MapSizeEntity x)
-        {
-            marscontext.Add(x);
 
-        }
-
+        //POSTs
         public void CreateRover(RoverEntity rover)
         {
-            marscontext.Add(rover);
+            var entity = new RoverEntity
+            {
+                RoverID = rover.RoverID,
+                Order = rover.Order,
+                X_Position = rover.X_Position,
+                Y_Position = rover.Y_Position,
+                Compass = rover.Compass,
+                IsAlive = rover.IsAlive,
+                Or_Grade = rover.Or_Grade,
+            };
+            marscontext.Rovers.Add(entity);
+            marscontext.SaveChanges();
         }
 
-        public int Save()
-        {
-            return marscontext.SaveChanges();
-        }
-
+        //GETs
         public RoverEntity GetRover(int id)
         {
 
-            return marscontext.Rovers.Where(rover =>
-                rover.RoverID == id!).FirstOrDefault();
+            return marscontext.Rovers.Where(r=>
+                r.RoverID == id).FirstOrDefault();
+        }
+
+        public IEnumerable<RoverEntity> GetAllRovers()
+        {
+            return marscontext.Rovers.ToList();
         }
 
         public MapSizeEntity GetMapSize(int id)
@@ -40,5 +48,9 @@ namespace MarsApp.Repository
             return marscontext.Maps.Where(map =>
                 map.MapID == id!).FirstOrDefault();
         }
+
+        //PUTs
+
+
     }
 }

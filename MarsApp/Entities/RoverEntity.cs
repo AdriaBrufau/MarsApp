@@ -1,11 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MarsApp.Entities
 {
     public class RoverEntity
     {
         [Key]
-        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int RoverID { get; set; }
         [Required]
         public int X_Position { get; set; }

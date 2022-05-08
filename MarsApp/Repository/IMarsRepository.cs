@@ -8,7 +8,6 @@ namespace MarsApp.Repository
         void CreateMap(MapSizeEntity x);
         RoverEntity GetRover(int id);
         MapSizeEntity GetMapSize(int id);
-        int Save();
-
+        IEnumerable<RoverEntity> GetAllRovers();
     }
 }
