@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsApp", "MarsApp\MarsApp.csproj", "{4E31A428-96E3-40F1-97B7-88E1CED40694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsApp", "MarsApp\MarsApp.csproj", "{522C706D-4025-4A95-9BBF-1F2253EA85C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsApp_Testing", "MarsApp_Testing\MarsApp_Testing.csproj", "{84710A33-3572-4638-BE5D-58101987AFCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4E31A428-96E3-40F1-97B7-88E1CED40694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E31A428-96E3-40F1-97B7-88E1CED40694}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E31A428-96E3-40F1-97B7-88E1CED40694}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E31A428-96E3-40F1-97B7-88E1CED40694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{522C706D-4025-4A95-9BBF-1F2253EA85C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522C706D-4025-4A95-9BBF-1F2253EA85C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522C706D-4025-4A95-9BBF-1F2253EA85C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{522C706D-4025-4A95-9BBF-1F2253EA85C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84710A33-3572-4638-BE5D-58101987AFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84710A33-3572-4638-BE5D-58101987AFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84710A33-3572-4638-BE5D-58101987AFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84710A33-3572-4638-BE5D-58101987AFCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {631E9263-9E51-49A1-9233-19BEDA7B46CD}
+		SolutionGuid = {F988FB3D-BA61-4881-825E-A90B088A8ED5}
 	EndGlobalSection
 EndGlobal
