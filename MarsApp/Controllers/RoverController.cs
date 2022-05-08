@@ -53,5 +53,30 @@ namespace MarsApp.Controllers
                 return BadRequest(ex);
             }
         }
+        [HttpPut]
+        public ActionResult<RoverEntity> MoveRover(int MapID, int RoverID, string[] Orders)
+        {
+            try
+            {
+                var update = _methods.UpdateRaver(MapID, RoverID, Orders);
+                return Ok(update);
+            }catch(Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+        [HttpDelete]
+        public ActionResult<RoverEntity> Deleterover(int id)
+        {
+            try
+            {
+                var rover = _methods.GetRover(id);
+                _methods.DeleteRover(rover);
+                return Ok();
+            }catch(Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
     }
 }

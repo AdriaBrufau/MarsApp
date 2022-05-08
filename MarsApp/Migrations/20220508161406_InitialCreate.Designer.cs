@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MarsApp.Migrations
 {
     [DbContext(typeof(MarsAppDbContext))]
-    [Migration("20220508132718_initialCreate")]
-    partial class initialCreate
+    [Migration("20220508161406_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

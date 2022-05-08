@@ -42,8 +42,8 @@ namespace MarsApp_Testing
             };
 
 
-            MovementOptions orders = new MovementOptions(CompassEnum.Orientation.North, "L", map);
-            orders.MoveTo(rover);
+            MovementOptions orders = new MovementOptions(rover, CompassEnum.Orientation.North, "L", map);
+            orders.MoveTo();
             
 
             Assert.AreEqual(CompassEnum.Orientation.West, rover.Compass);
@@ -66,8 +66,8 @@ namespace MarsApp_Testing
                 Order = null
             };
 
-            MovementOptions newOrders = new MovementOptions(CompassEnum.Orientation.North, "F", map);
-            newOrders.MoveTo(rover);
+            MovementOptions newOrders = new MovementOptions(rover, CompassEnum.Orientation.North, "F", map);
+            newOrders.MoveTo();
             map.CheckIfRoverIs(rover);
 
             Assert.AreEqual(false, rover.IsAlive);
@@ -76,8 +76,8 @@ namespace MarsApp_Testing
         public void TestIfMove()
         {
             baseRover.Or_Grade = 90;
-            MovementOptions newOrder = new MovementOptions(CompassEnum.Orientation.East, "F", map);
-            newOrder.MoveTo(baseRover);
+            MovementOptions newOrder = new MovementOptions(baseRover, CompassEnum.Orientation.East, "F", map);
+            newOrder.MoveTo();
 
             Assert.AreEqual(CompassEnum.Orientation.East, baseRover.Compass);
             Assert.AreEqual("F", baseRover.Order);
@@ -99,8 +99,8 @@ namespace MarsApp_Testing
             string[] orders = { "F", "R", "L", "F" };
             foreach(string order in orders)
             {
-                MovementOptions newOrder = new MovementOptions(baseRover.Compass, order, map);
-                newOrder.MoveTo(baseRover);
+                MovementOptions newOrder = new MovementOptions(baseRover, baseRover.Compass, order, map);
+                newOrder.MoveTo();
             }
 
             Assert.AreEqual(0, baseRover.X_Position);

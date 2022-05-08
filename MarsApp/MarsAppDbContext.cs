@@ -25,5 +25,6 @@ namespace MarsApp
             modelBuilder.Entity<MapSizeEntity>().HasData(
                 new MapSizeEntity { MapID = 1, X_Axis = 3, Y_Axis = 4 });
         }
+        
     }
 }

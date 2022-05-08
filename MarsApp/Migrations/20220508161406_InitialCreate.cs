@@ -4,7 +4,7 @@
 
 namespace MarsApp.Migrations
 {
-    public partial class initialCreate : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -26,7 +26,8 @@ namespace MarsApp.Migrations
                 name: "Rovers",
                 columns: table => new
                 {
-                    RoverID = table.Column<int>(type: "int", nullable: false),
+                    RoverID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     X_Position = table.Column<int>(type: "int", nullable: false),
                     Y_Position = table.Column<int>(type: "int", nullable: false),
                     Order = table.Column<string>(type: "nvarchar(max)", nullable: true),

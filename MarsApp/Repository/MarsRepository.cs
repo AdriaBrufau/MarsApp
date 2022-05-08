@@ -1,4 +1,5 @@
 ﻿using MarsApp.Entities;
+using MarsApp.Helpers;
 
 namespace MarsApp.Repository
 {
@@ -51,6 +52,50 @@ namespace MarsApp.Repository
 
         //PUTs
 
+        public MapSizeEntity UpdateMap(MapSizeEntity map)
+        {
+            var entity = marscontext.Maps.Find(map.MapID);
+            if(entity != null)
+            {
+                entity.X_Axis = map.X_Axis;
+                entity.Y_Axis = map.Y_Axis;
+                marscontext.SaveChanges();
+                return entity;
+            }
+            return null;
+
+        }
+        public RoverEntity UpdateRaver(int RoverID, int MapID, string[] requestOrder)
+        {
+            var entity = marscontext.Rovers.Find(RoverID);
+            var mapEntity = marscontext.Maps.Find(MapID);
+            if(entity != null && mapEntity != null && requestOrder != null)
+            {
+                var map = new MapBuilder(mapEntity.X_Axis, mapEntity.Y_Axis);
+                foreach(string order in requestOrder)
+                {
+                    if (entity.IsAlive) {
+                        var movement = new MovementOptions(entity, entity.Compass, order, map);
+                        movement.MoveTo();
+                        marscontext.SaveChanges();
+                    }
+                    
+                }
+                return entity;
+            }
+            return null;
+        }
+
+        //DELETEs
+
+        public void DeleteRover(RoverEntity rover)
+        { 
+            marscontext.Rovers.Remove(rover);
+            marscontext.SaveChanges();
+
+        }
+
+       
 
     }
 }
